@@ -64,6 +64,7 @@ if $proceed; then
 	if [ ! -z "$origin" ]; then
 		echo set origin $origin
 		git remote add origin "$origin"
+		printf	"*****\nRemember to push to upstream via:\n\tgit push -u origin master\n*****\n"
 	fi
 fi
 
